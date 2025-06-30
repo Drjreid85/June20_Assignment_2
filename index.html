@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Basic Grid Template</title>
+</head>
+<body>
+
+  <div id="lightbox" onclick="toggleLightbox();">
+    <img src="https://place-hold.it/600x600" alt="" id="lightboxImage">
+    <p>click anywhere to close</p>
+  </div>
+  <div id="logoDiv">
+    <a href="#" title="home">
+      <img src="assets/images/logo.png" alt="Logo" id="logo">  
+    </a>
+    <img src="assets/images/codepen-64.png" alt="Codepen" class="socialIcon">
+    <img src="assets/images/twitter-64.png" alt="Twitter" class="socialIcon">
+    <img src="assets/images/linkedin-64.png" alt="LinkIn" class="socialIcon">
+  </div>
+  <div id="hamburger" onclick="toggleMenu();">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div id="menu">
+    <a href="#bio" title="bio" onclick="toggleMenu();">bio</a>
+    <a href="#skills" title="skills" onclick="toggleMenu();">skills</a>
+    <a href="#projects" title="projects" onclick="toggleMenu();">projects</a>
+    <a href="#contact" title="contact" onclick="toggleMenu();">contact</a>
+  </div>
+  <div id="grid">
+    <header>
+      <img src="assets/images/header1.png" alt="header 1" class="thumb active" onclick="setImage(0);">
+      <img src="assets/images/header2.png" alt="header 2" class="thumb" onclick="setImage(1);">
+      <img src="assets/images/header3.png" alt="header 3" class="thumb" onclick="setImage(2);">
+      <img src="assets/images/header4.png" alt="header 4" class="thumb" onclick="setImage(3);">
+      <img src="assets/images/header5.png" alt="header 5" class="thumb" onclick="setImage(4);">
+      <img src="assets/images/header6.png" alt="header 6" class="thumb" onclick="setImage(5);">
+    </header>
+    <div id="bio">
+      <h1>BIO:</h1>
+    </div>
+    <div id="skills">
+      <h1>SKILLS:</h1>
+    </div>
+    <div id="projects">
+      <img src="assets/images/fairy1.png" alt="fairy 1" class="projectImage" onclick="toggleLightbox(this.src, this.alt);">
+      <img src="assets/images/fairy2.png" alt="fairy 2" class="projectImage" onclick="toggleLightbox(this.src, this.alt);">
+      <img src="assets/images/fairy3.png" alt="fairy 3" class="projectImage" onclick="toggleLightbox(this.src, this.alt);">
+      <img src="assets/images/fairy4.png" alt="fairy 4" class="projectImage" onclick="toggleLightbox(this.src, this.alt);">
+      <img src="assets/images/fairy5.png" alt="fairy 5" class="projectImage" onclick="toggleLightbox(this.src, this.alt);">
+      <img src="assets/images/fairy6.png" alt="fairy 6" class="projectImage" onclick="toggleLightbox(this.src, this.alt);">
+      <img src="assets/images/fairy7.png" alt="fairy 7" class="projectImage" onclick="toggleLightbox(this.src, this.alt);">
+      <img src="assets/images/fairy8.png" alt="fairy 8" class="projectImage" onclick="toggleLightbox(this.src, this.alt);">
+    </div>
+    <div id="contact">
+      <form id="feedbackForm">
+        <input id="username" type="text" placeholder="enter your name" aria-label="username"><br>
+        <input id="password" type="email" placeholder="enter your email" aria-label="password"><br>
+        <textarea name="message" id="message" cols="30" rows="7" maxlength="200" 
+            placeholder="please type message here, and have a great day &hearts;" aria-label="message"></textarea><br>
+        <input type="submit" id="submit" value="Send Message">
+      </form>
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5835.568033353367!2d-81.19848748719762!3d43.00388227102003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eed6e240c52b3%3A0x5ef85d3eeea9686!2striOS%20College%20Business%20Technology%20Healthcare%20-%20London%20Campus!5e0!3m2!1sen!2sca!4v1742944170029!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+      <p>&copy; 2025, NinjaDev no rights reserved.</p>
+    </footer>
+  </div>
+  
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
