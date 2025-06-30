@@ -267,4 +267,13 @@ footer {
   #contact {
     grid-template-columns: repeat(1, 1fr);
   }
+css-update
 }
+
+h1 {
+  text-align: center;
+  color: teal;
+}
+
+}
+ main
