@@ -1,4 +1,7 @@
+1-alert-message-to-appjs
 alert("This is for assignment 2")
+
+main
 
 //======================================//
 //=========== HEADER CODE =============//
