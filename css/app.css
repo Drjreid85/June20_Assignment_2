@@ -268,3 +268,8 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+h1 {
+  text-align: center;
+  color: teal;
+}
